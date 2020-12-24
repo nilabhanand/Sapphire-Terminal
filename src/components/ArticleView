@@ -1,0 +1,31 @@
+import React, { Component } from "react";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Link from "@material-ui/core/Link";
+
+class ArticleView extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      articles: []
+    };
+  }
+
+  render() {
+          return (
+            <Link className="link" href={this.props.item.url}>
+              <div>
+                <Typography variant="h6" color={"secondary"} gutterBottom>
+                  {this.props.item.title}
+                </Typography>
+                <Typography variant="caption" className="content" gutterBottom>
+                  {this.props.item.description ? this.props.item.description : this.props.item.title}
+                </Typography>
+                <br />
+              </div>
+            </Link>
+          );
+}
+
+export default ArticleView;
