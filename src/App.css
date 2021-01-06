@@ -47,7 +47,20 @@ html,body
   width: 55%;
   right: 0;
 }
-.login-form {
+
+#signup-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  height: 500px;
+  width: 400px;
+  background-color: #0e1417;
+  box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.2), 0 30px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#login-form {
+  visibility: visible;
   position: absolute;
   left: 50%;
   top: 50%;
