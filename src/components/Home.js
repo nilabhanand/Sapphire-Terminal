@@ -7,13 +7,11 @@ import Paper from "@material-ui/core/Paper";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import { Button } from "@material-ui/core";
-import Articles from "./Articles";
 import Markets from "./Markets";
 import Tweets from "./Tweets";
 import Dashboard from "./Dashboard";
 import TweetList from "./TweetList";
 import Forum from "./Forum";
-import Charts from "./Charts";
 import Typography from "@material-ui/core/Typography";
 import firebase from "firebase/app";
 import "firebase/auth";
@@ -120,7 +118,7 @@ class Home extends Component {
                         <TweetList />
                     )}
                     {this.state.activeTab === 2 && (
-                        <Articles />
+                        <Forum />
                     )}
                     {this.state.activeTab === 3 && (
                         <Forum />

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import TweetList from "./TweetList";
 import Headlines from "./Headlines";
 import LongShort from './LongShort';
-import TickerTape from "./TickerTape";
 import TradingPlanWidget from "./TradingPlanWidget";
 import PropTypes from 'prop-types';
 import { withStyles } from "@material-ui/core/styles";

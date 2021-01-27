@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import TradingViewWidget, { Themes } from "react-tradingview-widget";
 import TweetList from "./TweetList";
 import Headlines from "./Headlines";
-import Articles from "./Articles";
-import TickerTape from "./TickerTape";
 import TradingPlan from "./TradingPlan";
 import Typography from "@material-ui/core/Typography";
 import { ResizeProvider, ResizeConsumer } from "react-resize-context";
@@ -44,7 +42,6 @@ class Dashboard extends Component {
 
       <div id="main-dashboard">
         <div className="scroll-bar">
-          <TickerTape />
         </div>
         <div className="middle">
           <div className="left-column">
