@@ -8,6 +8,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { Grid, Paper } from '@material-ui/core';
 import { sizing } from '@material-ui/system';
 import TradingViewWidget, { Themes } from "react-tradingview-widget";
+import Journal from "./journal";
 
 
 const styles = theme => ({
@@ -139,12 +140,12 @@ class Forum extends Component {
                     </Grid>
                     <Grid item xs={12} md={6} className={classes.griditem2}>
                         <Paper className={classes.paper}>
-                            Crypto
+                            <Journal />
                         </Paper>
                     </Grid>
                     <Grid item xs={12} md={3} className={classes.griditem2}>
                         <Paper className={classes.paper}>
-                            
+                            Crypto
                         </Paper>
                     </Grid>
                 </Grid>

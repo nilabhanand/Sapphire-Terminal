@@ -1,7 +1,11 @@
 Sapphire Terminal is an All-in-One trading platform developed by traders to be the only trading tool you will ever need. We give you the ultimate set of tools used by institutions for analyzing the financial markets and making your trading more efficient.
 
+<<<<<<< HEAD
 
 This project is currently in development mode, we are working on integerating FIX API connection with brokerages to carry out real-time market order execution.
+=======
+Currently in development mode, we are working on integerating FIX API connection with brokerages to carry out real-time market order execution.
+>>>>>>> 03ca2b2b8e58c7df504c20a10e9a4ac259126bf3
 
 ## Available Scripts
 
@@ -16,9 +20,6 @@ Second, you can start the app from the project directory by:
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
 ### `npm test`
 
