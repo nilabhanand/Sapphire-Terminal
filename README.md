@@ -1,20 +1,17 @@
 Sapphire Terminal is an All-in-One trading platform developed by traders to be the only trading tool you will ever need. We give you the ultimate set of tools used by institutions for analyzing the financial markets and making your trading more efficient.
 
-<<<<<<< HEAD
-
-This project is currently in development mode, we are working on integerating FIX API connection with brokerages to carry out real-time market order execution.
-=======
 Currently in development mode, we are working on integerating FIX API connection with brokerages to carry out real-time market order execution.
->>>>>>> 03ca2b2b8e58c7df504c20a10e9a4ac259126bf3
 
 ## Available Scripts
 
-First, go into the server directory and run the server to get access to real-time feed of FX headlines.<br>
+First, run ### `npm install` to install all the packages.
+
+Second, go into the server directory and run the server to get access to real-time feed of FX headlines.<br>
 start the server by:
 
 ### `node server.js`
 
-Second, you can start the app from the project directory by:
+Third, you can start the app from the project directory by:
 
 ### `npm start`
 
