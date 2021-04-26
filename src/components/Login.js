@@ -5,6 +5,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import Typography from "@material-ui/core/Typography";
 import firebase from "firebase/app";
 import "firebase/auth";
+import mainLogo from'./images/cryptointro.svg';
 
 
 class Login extends Component {
@@ -47,16 +48,8 @@ class Login extends Component {
         firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
         .catch((error) => {
             console.log(error);
-        })
-        var user = firebase.auth().currentUser;
-        user.updateProfile({
-            displayName: this.state.fullName
-        }).then(function() {
-            // Update successful.
-            console.log(user.displayName)
-        }).catch(function(error) {
-            // An error happened.
         });
+       
     }
 
     handleChange(e) {
@@ -108,11 +101,8 @@ class Login extends Component {
                 </div>
                 <div className="left-frame">
                     <div className="login-carousel">
-                        <Carousel>
-                            <Typography style={{ padding: 16, textAlign: "center", color: "#fff", fontSize: "30px" }} variant="h2">ADVANCE TO THE NEXT LEVEL OF TRADING</Typography>
-                            <Typography style={{ padding: 16, textAlign: "center", color: "#fff", fontSize: "30px" }} variant="h2">GET THE ADVANTAGES OF INSTITUTIONAL TRADERS</Typography>
-                            <Typography style={{ padding: 16, textAlign: "center", color: "#fff", fontSize: "30px" }} variant="h2">LIVE DATA & HEADLINES DELIVERED INSTANTLY</Typography>
-                        </Carousel>
+                        <img src={mainLogo}></img>
+                        <Typography variant="h1" style={{ color: "#fff", fontSize: "40px", padding: "10px" }}>Elevate your trading skills with advanced trading analytics and institutional level execution</Typography>
                     </div>
                 </div>
             

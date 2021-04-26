@@ -71,7 +71,6 @@ class Home extends Component {
                 <AppBar position="static" color="#0e1417" className="appbar">
                     <Tabs className="main-tabs" value={this.state.activeTab} onChange={this.handleChange} variant="fullWidth">
                         <Tab label="Terminal" style={{ color: "#fff", fontSize: "12px" }}/>
-                        <Tab label="Markets" style={{ color: "#fff", fontSize: "12px" }}/>
                         <Tab label="Stats" style={{ color: "#fff", fontSize: "12px" }}/>
                         <Tab label="Community" style={{ color: "#fff", fontSize: "12px" }}/>
                         <Toolbar>
@@ -115,13 +114,13 @@ class Home extends Component {
                         <Forum />
                     )}
                     {this.state.activeTab === 1 && (
-                        <TweetList />
+                        <Markets />
                     )}
                     {this.state.activeTab === 2 && (
-                        <Forum />
+                        <Markets />
                     )}
                     {this.state.activeTab === 3 && (
-                        <Forum />
+                        <Markets />
                     )}
                 </AppBar>
             </div>

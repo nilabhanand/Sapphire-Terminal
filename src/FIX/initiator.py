@@ -8,9 +8,11 @@ try:
         application = quickfix.MyApplication()
         storeFactory = quickfix.FileStoreFactory(settings)
         logFactory = quickfix.FileLogFactory(settings)
-        acceptor = quickfix.SocketAcceptor(application, storeFactory, settings, logFactory)
-        acceptor.start()
+        initiator = quickfix.SocketInitiator(application, storeFactory, settings, logFactory)
+        initiator.start()
+        application.run()
+        initiator.stop()
         # while condition == true: do something
-        acceptor.stop()
+        
 except quickfix.ConfigError, e:
         print e

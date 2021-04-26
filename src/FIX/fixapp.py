@@ -5,7 +5,10 @@ class Application(_object):
         def onCreate(self, sessionID): return
 
         #notifies when a valid logon has been established with a counter party
-        def onLogon(self, sessionID): return
+        def onLogon(self, sessionID):
+            self.sessionID = sessionID
+            print("Successful Logon to session '%s'." % sessionID.toString())
+            return
 
         #notifies you when an FIX session is no longer online
         def onLogout(self, sessionID): return
@@ -21,3 +24,6 @@ class Application(_object):
 
         #receives application level request
         def fromApp(self, message, sessionID): return
+
+        #
+        def sendToTarget(message, senderCompID, targetCompID, qualifier): return

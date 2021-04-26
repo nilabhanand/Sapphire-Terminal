@@ -1,8 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sapphire Terminal is an All-in-One trading platform developed by traders to be the only trading tool you will ever need. We give you the ultimate set of tools used by institutions for analyzing the financial markets and making your trading more efficient.
+
+
+This project is currently in development mode, we are working on integerating FIX API connection with brokerages to carry out real-time market order execution.
 
 ## Available Scripts
 
-In the project directory, you can run:
+First, go into the server directory and run the server to get access to real-time feed of FX headlines.<br>
+start the server by:
+
+### `node server.js`
+
+Second, you can start the app from the project directory by:
 
 ### `npm start`
 

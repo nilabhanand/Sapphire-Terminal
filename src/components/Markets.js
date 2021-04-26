@@ -13,23 +13,7 @@ class Markets extends Component {
   render() {
     return (
       <div className="marketsdiv">
-        <Grid container spacing={1}>
-          <Grid item xs={4}>
-            <Paper className="forexdiv">
-              <h6 style={{ color: "white" }}>PAIRS</h6>
-            </Paper>
-          </Grid>
-          <Grid item xs={4}>
-            <Paper className="stocksdiv">
-              <h6 style={{ color: "white" }}>STOCKS</h6>
-            </Paper>
-          </Grid>
-          <Grid item xs={4}>
-            <Paper className="indexdiv" backgroundColor="black">
-              <h6 style={{ color: "white" }}>INDEXES</h6>
-            </Paper>
-          </Grid>
-        </Grid>
+        
       </div>
     );
   }
