@@ -4,7 +4,7 @@ Currently in development mode, we are working on integerating FIX API connection
 
 ## Available Scripts
 
-First, run ### `npm install` to install all the packages.
+First, run `npm install` to install all the packages.
 
 Second, go into the server directory and run the server to get access to real-time feed of FX headlines.<br>
 start the server by:
